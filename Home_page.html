@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Portal | FutureWave Solutions</title>
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(120deg, #2a2f4f, #3c5186);
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+ 
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+ 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+ 
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffdd57;
+}
+ 
+nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+ 
+nav a:hover {
+  color: #ffdd57;
+}
+ 
+.main {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+ 
+.sidebar {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+ 
+.sidebar img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+ 
+.login-box {
+  background-color: #ffffff15;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+}
+ 
+.login-box h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffdd57;
+}
+ 
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffffdd;
+  color: #333;
+}
+ 
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ffdd57;
+}
+ 
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #ffdd57;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+ 
+button:hover {
+  background-color: #ffe580;
+}
+ 
+.footer-note {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #ddd;
+  text-align: center;
+}
+ 
+.content {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+ 
+.section {
+  flex: 1 1 280px;
+  background-color: #ffffff15;
+  padding: 20px;
+  border-radius: 15px;
+}
+ 
+.section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffdd57;
+}
+ 
+.section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+ 
+.section ul li {
+  margin-bottom: 10px;
+}
+ 
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .main {
+    flex-direction: column;
+  }
+}
+ 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">FutureWave Solutions</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#policies">Policies</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#training">Training</a>
+        <a href="#support">Support</a>
+        <a href="#login">Login</a>
+      </nav>
+    </header><div class="main">
+  <div class="sidebar">
+    <img src="image.jpg.jpg" alt="Image">
+  </div>
+ 
+  <div class="content">
+    <div class="section" id="about">
+      <h2>About Us</h2>
+      <p>FutureWave Solutions is a leading global IT firm building digital products and enterprise solutions that transform industries.</p>
+    </div>
+    <div class="section" id="policies">
+      <h2>Company Policies</h2>
+      <ul>
+        <li>Equal Opportunity Employment</li>
+        <li>Work from Anywhere Policy</li>
+        <li>Annual Ethics & Compliance Certification</li>
+        <li>Mandatory Cybersecurity Training</li>
+      </ul>
+    </div>
+    <div class="section" id="benefits">
+      <h2>Employee Benefits</h2>
+      <ul>
+        <li>Health & Wellness Programs</li>
+        <li>Flexible Work Hours</li>
+        <li>Career Development Support</li>
+        <li>Paid Certifications & Learning Portals</li>
+      </ul>
+    </div>
+    <div class="section" id="training">
+      <h2>Onboarding & Training</h2>
+      <ul>
+        <li>New Hire Orientation</li>
+        <li>Role-Based Skill Training</li>
+        <li>Access to Learning Portal (LMS)</li>
+        <li>1:1 Mentorship Program</li>
+      </ul>
+    </div>
+    <div class="section" id="support">
+      <h2>Support</h2>
+      <p>Need help with login, setup, or processes? Reach out to our 24x7 HR or IT Helpdesk via portal or email support@futurewave.com</p>
+    </div>
+    <div class="section" id="login">
+      <div class="login-box">
+        <h2>Employee Login</h2>
+        <input type="text" id="username" placeholder="Employee ID or Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+        <p class="footer-note">New Joiner? <a href="reset-password.html" style="color: #ffdd57; text-decoration: underline;">Set your password</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+  </div>  <script>
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+ 
+      if (username === "employee@futurewave.com" && password === "welcome123") {
+        alert("Login successful! Redirecting to dashboard...");
+        window.location.href = "dashboard.html";
+      } else {
+        alert("Invalid credentials. Please try again.");
+      }
+    }
+  </script></body>
+</html>
+ 
